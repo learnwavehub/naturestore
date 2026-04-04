@@ -13,13 +13,13 @@ import Testimonials from "@/components/Testimonials";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Lumora tech",
-  description: "All your lighting solutions",
+  title: "Miona spares tech",
+  description: "All your automobile spares in one place",
   manifest: '/site.webmanifest', 
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Lumora Tech',
+    title: 'Miona tech',
   },
 };
 

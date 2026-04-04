@@ -8,120 +8,120 @@ const testimonials = [
   {
     id: 1,
     name: "James Maina",
-    title: "Business Owner, Nairobi",
-    content: "Lumora Tech transformed our office lighting completely! The quality of products is exceptional and their service is top-notch. Delivery was faster than expected!",
+    title: "Car Owner, Nairobi",
+    content: "Miona Tech Autospares helped me replace my damaged headlights quickly. The quality is excellent and prices are fair. Delivery was faster than expected!",
     rating: 5.0,
     date: "2 weeks ago"
   },
   {
     id: 2,
     name: "Grace Wambui",
-    title: "Hotel Manager, Mombasa",
-    content: "Their LED solutions helped us reduce energy costs by 60%. The team was professional and installation was done perfectly. Timely order execution!",
+    title: "Fleet Manager, Mombasa",
+    content: "We sourced side mirrors and LED bulbs for our vehicles and the quality is outstanding. The team is professional and orders are always fulfilled on time.",
     rating: 5.0,
     date: "1 month ago"
   },
   {
     id: 3,
     name: "David Omondi",
-    title: "Architect, Kisumu",
-    content: "Working with Lumora Tech was a game-changer. Their innovative lighting designs brought our project to life. Quality products and excellent customer service!",
+    title: "Mechanic, Kisumu",
+    content: "Miona Tech Autospares is my go-to for headlight lenses and fog lights. Their parts fit perfectly and last long. Great service every time!",
     rating: 4.8,
     date: "3 weeks ago"
   },
   {
     id: 4,
     name: "Sarah Atieno",
-    title: "School Principal, Nakuru",
-    content: "Our school's lighting upgrade has improved learning environments dramatically. Efficient, reliable, and cost-effective solutions! The team was very professional.",
+    title: "Car Owner, Nakuru",
+    content: "I replaced my rear bumper and tail light lens through them and the results were amazing. Reliable products and professional service!",
     rating: 5.0,
     date: "2 months ago"
   },
   {
     id: 5,
     name: "Michael Kamau",
-    title: "Factory Manager, Thika",
-    content: "Industrial lighting solutions that actually work! Lumora Tech delivered on time and within budget. Their products are durable and energy-efficient.",
+    title: "Transport Manager, Thika",
+    content: "Durable spare parts that actually hold up! From projector bulbs to bumpers, everything was delivered on time and within budget.",
     rating: 4.9,
     date: "1 week ago"
   },
   {
     id: 6,
     name: "Lydia Akinyi",
-    title: "Restaurant Owner, Eldoret",
-    content: "The ambient lighting created the perfect atmosphere for our restaurant. Professional team, quality products, and amazing after-sales support! Highly recommended.",
+    title: "Car Owner, Eldoret",
+    content: "The LED bulbs I bought completely transformed my night driving experience. Great quality and amazing customer support!",
     rating: 5.0,
     date: "3 days ago"
   },
   {
     id: 7,
     name: "Peter Mwangi",
-    title: "Hospital Administrator, Kisii",
-    content: "Critical lighting needs met with precision. Hospital-grade lighting solutions are reliable and energy-efficient. Exceptional service and support!",
+    title: "Taxi Operator, Kisii",
+    content: "Reliable spare parts for daily use. The side mirrors and fog lights I purchased are durable and perfectly compatible.",
     rating: 4.7,
     date: "1 month ago"
   },
   {
     id: 8,
     name: "Esther Njeri",
-    title: "Mall Manager, Westlands",
-    content: "Our shopping mall lighting upgrade was handled professionally. Bright, energy-saving solutions that enhance customer experience. Very satisfied!",
+    title: "Car Dealer, Westlands",
+    content: "We upgraded several vehicles with new headlights and tail light lenses. Quality products that enhance the look and value of the cars.",
     rating: 5.0,
     date: "2 weeks ago"
   },
   {
     id: 9,
     name: "Brian Odhiambo",
-    title: "Real Estate Developer, Karen",
-    content: "Premium lighting solutions for luxury homes. Lumora Tech understands quality and aesthetics. Their products add significant value to properties.",
+    title: "Auto Enthusiast, Karen",
+    content: "Premium quality spare parts! The projector bulbs and front bumper I got gave my car a sleek, modern look. Highly recommend.",
     rating: 4.9,
     date: "3 months ago"
   },
   {
     id: 10,
     name: "Catherine Nyambura",
-    title: "Church Administrator, Ruiru",
-    content: "Perfect lighting for our worship space. The team was respectful and delivered beyond expectations. Quality products that stand the test of time!",
+    title: "Car Owner, Ruiru",
+    content: "Perfect replacement for my damaged side wing and tail light lens. The team was helpful and the products exceeded my expectations.",
     rating: 5.0,
     date: "1 month ago"
   },
   {
     id: 11,
     name: "Samuel Kariuki",
-    title: "Warehouse Owner, Embakasi",
-    content: "Massive warehouse lighting project completed on schedule. Energy savings are remarkable. Lumora Tech delivers exactly what they promise!",
+    title: "Garage Owner, Embakasi",
+    content: "Bulk orders for headlights and LED bulbs are always handled efficiently. My clients are happy with the quality every time.",
     rating: 4.8,
     date: "2 weeks ago"
   },
   {
     id: 12,
     name: "Rebecca Achieng",
-    title: "Salon Owner, Kilimani",
-    content: "Perfect salon lighting that makes our clients look their best. Professional installation and beautiful results. Very happy with the entire service!",
+    title: "Car Owner, Kilimani",
+    content: "Got my fog lights and headlight lens replaced and the difference is incredible. Professional service and beautiful results!",
     rating: 5.0,
     date: "4 days ago"
   },
   {
     id: 13,
     name: "Joseph Nderitu",
-    title: "Hotel Chain Director, Coast",
-    content: "Standardized lighting solutions across all our hotels. Consistent quality and reliable performance. Lumora Tech is our trusted lighting partner.",
+    title: "Car Hire Business Owner, Coast",
+    content: "We rely on Miona Tech Autospares for consistent quality across our fleet. Reliable parts and excellent service every time.",
     rating: 4.9,
     date: "2 months ago"
   },
   {
     id: 14,
     name: "Mercy Wanjiru",
-    title: "Gym Owner, Lavington",
-    content: "Dynamic lighting that energizes our gym space. Installation was smooth and products are durable. Excellent customer care throughout the process!",
+    title: "Car Owner, Lavington",
+    content: "Stylish and durable spare parts! The rear bumper and LED bulbs I bought upgraded my car's look instantly.",
     rating: 5.0,
     date: "1 week ago"
   },
   {
     id: 15,
     name: "Daniel Mutua",
-    title: "Conference Center Manager, Upper Hill",
-    content: "State-of-the-art lighting for our conference halls. Versatile solutions that adapt to different events. Professional team delivering quality work!",
+    title: "Logistics Manager, Upper Hill",
+    content: "High-quality spare parts for our fleet vehicles. From side mirrors to front bumpers, everything fits perfectly and lasts long.",
     rating: 4.8,
     date: "3 weeks ago"
   }

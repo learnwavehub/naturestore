@@ -262,7 +262,7 @@ const Cart = () => {
             <p className="text-lg font-semibold mb-2">
               Call us to place your order:
             </p>
-            <p className="text-2xl font-bold text-green-600">0700141499</p>
+            <p className="text-2xl font-bold text-green-600">0715584225</p>
           </div>
         )}
 

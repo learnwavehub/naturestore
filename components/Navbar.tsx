@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className="relative">
               <Image 
                 src='/bestlogo.jpg' 
-                alt="Lumora Tech Logo" 
+                alt="miona Tech Logo" 
                 width={50} 
                 height={50} 
                 className="rounded-full object-cover border-2 border-white shadow-md" 
@@ -87,7 +87,7 @@ const Navbar = () => {
                 ⚡
               </div>
             </div>
-            <span className="hidden md:inline text-white font-bold text-xl">Lumora</span>
+            <span className="hidden md:inline text-white font-bold text-xl">Miona autospares</span>
           </Link>
 
           {/* Contact Info - Desktop */}
@@ -101,12 +101,12 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-xs text-blue-100">Call Us</span>
-                <span className="font-semibold">0700 141 499</span>
+                <span className="font-semibold">0715 584 225</span>
               </div>
             </a>
             
             <a 
-              href="mailto:kaceymwangi@gmail.com" 
+              href="mailto:naomygeorge08@gmail.com" 
               className="flex items-center gap-2 text-white hover:text-blue-100 transition-all duration-300 hover:scale-105 group"
             >
               <div className="p-2 bg-blue-400 rounded-full group-hover:bg-blue-300 transition-colors">
@@ -329,7 +329,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/products"
+            href="/"
             className="flex items-center gap-2 px-6 py-2 rounded-lg text-white hover:bg-blue-700 hover:shadow-md transition-all duration-300"
           >
             <span className="font-medium">All Products</span>
