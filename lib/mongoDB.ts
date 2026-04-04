@@ -12,7 +12,7 @@ export const connectToDB = async (): Promise<void> => {
 
   try {
     await mongoose.connect(process.env.MONGODB_URL || "", {
-      dbName: "microplug_Store"
+      dbName: "mionatech_Store"
     })
 
     isConnected = true;
