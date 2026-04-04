@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 const testimonials = [
   {
     id: 1,
-    name: "James Maina",
+    name: "Kevin Otieno",
     title: "Car Owner, Nairobi",
     content: "Miona Tech Autospares helped me replace my damaged headlights quickly. The quality is excellent and prices are fair. Delivery was faster than expected!",
     rating: 5.0,
@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Grace Wambui",
+    name: "Ann Naliaka",
     title: "Fleet Manager, Mombasa",
     content: "We sourced side mirrors and LED bulbs for our vehicles and the quality is outstanding. The team is professional and orders are always fulfilled on time.",
     rating: 5.0,
@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "David Omondi",
+    name: "Victor Ochieng",
     title: "Mechanic, Kisumu",
     content: "Miona Tech Autospares is my go-to for headlight lenses and fog lights. Their parts fit perfectly and last long. Great service every time!",
     rating: 4.8,
@@ -31,7 +31,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Sarah Atieno",
+    name: "Beatrice Jepkoech",
     title: "Car Owner, Nakuru",
     content: "I replaced my rear bumper and tail light lens through them and the results were amazing. Reliable products and professional service!",
     rating: 5.0,
@@ -39,7 +39,7 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "Michael Kamau",
+    name: "George Mutiso",
     title: "Transport Manager, Thika",
     content: "Durable spare parts that actually hold up! From projector bulbs to bumpers, everything was delivered on time and within budget.",
     rating: 4.9,
@@ -47,7 +47,7 @@ const testimonials = [
   },
   {
     id: 6,
-    name: "Lydia Akinyi",
+    name: "Faith Cherono",
     title: "Car Owner, Eldoret",
     content: "The LED bulbs I bought completely transformed my night driving experience. Great quality and amazing customer support!",
     rating: 5.0,
@@ -55,7 +55,7 @@ const testimonials = [
   },
   {
     id: 7,
-    name: "Peter Mwangi",
+    name: "Samuel Kiptoo",
     title: "Taxi Operator, Kisii",
     content: "Reliable spare parts for daily use. The side mirrors and fog lights I purchased are durable and perfectly compatible.",
     rating: 4.7,
@@ -63,7 +63,7 @@ const testimonials = [
   },
   {
     id: 8,
-    name: "Esther Njeri",
+    name: "Joyce Wairimu",
     title: "Car Dealer, Westlands",
     content: "We upgraded several vehicles with new headlights and tail light lenses. Quality products that enhance the look and value of the cars.",
     rating: 5.0,
@@ -71,7 +71,7 @@ const testimonials = [
   },
   {
     id: 9,
-    name: "Brian Odhiambo",
+    name: "Allan Mboya",
     title: "Auto Enthusiast, Karen",
     content: "Premium quality spare parts! The projector bulbs and front bumper I got gave my car a sleek, modern look. Highly recommend.",
     rating: 4.9,
@@ -79,7 +79,7 @@ const testimonials = [
   },
   {
     id: 10,
-    name: "Catherine Nyambura",
+    name: "Mary Wanjiku",
     title: "Car Owner, Ruiru",
     content: "Perfect replacement for my damaged side wing and tail light lens. The team was helpful and the products exceeded my expectations.",
     rating: 5.0,
@@ -87,7 +87,7 @@ const testimonials = [
   },
   {
     id: 11,
-    name: "Samuel Kariuki",
+    name: "Dennis Kariuki",
     title: "Garage Owner, Embakasi",
     content: "Bulk orders for headlights and LED bulbs are always handled efficiently. My clients are happy with the quality every time.",
     rating: 4.8,
@@ -95,7 +95,7 @@ const testimonials = [
   },
   {
     id: 12,
-    name: "Rebecca Achieng",
+    name: "Naomi Atieno",
     title: "Car Owner, Kilimani",
     content: "Got my fog lights and headlight lens replaced and the difference is incredible. Professional service and beautiful results!",
     rating: 5.0,
@@ -103,7 +103,7 @@ const testimonials = [
   },
   {
     id: 13,
-    name: "Joseph Nderitu",
+    name: "Peter Karanja",
     title: "Car Hire Business Owner, Coast",
     content: "We rely on Miona Tech Autospares for consistent quality across our fleet. Reliable parts and excellent service every time.",
     rating: 4.9,
@@ -111,7 +111,7 @@ const testimonials = [
   },
   {
     id: 14,
-    name: "Mercy Wanjiru",
+    name: "Lucy Nduta",
     title: "Car Owner, Lavington",
     content: "Stylish and durable spare parts! The rear bumper and LED bulbs I bought upgraded my car's look instantly.",
     rating: 5.0,
@@ -119,7 +119,7 @@ const testimonials = [
   },
   {
     id: 15,
-    name: "Daniel Mutua",
+    name: "Brian Kiplangat",
     title: "Logistics Manager, Upper Hill",
     content: "High-quality spare parts for our fleet vehicles. From side mirrors to front bumpers, everything fits perfectly and lasts long.",
     rating: 4.8,
@@ -241,7 +241,7 @@ export default function Testimonials() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4"
           >
-            Kenyan Businesses <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Love Lumora</span>
+            Kenyan Businesses <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Love Miona tech autospares</span>
           </motion.h2>
           
           <motion.p
@@ -581,7 +581,7 @@ export default function Testimonials() {
               
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-bold mb-2">100%</div>
-                <p className="text-blue-100">Recommend Lumora Tech</p>
+                <p className="text-blue-100">Recommend Miona Tech</p>
                 <motion.div
                   className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full"
                   whileHover={{ scale: 1.05 }}
@@ -606,7 +606,7 @@ export default function Testimonials() {
             Join Hundreds of Satisfied Kenyan Customers
           </h3>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Experience the Lumora Tech difference - quality products, professional service, and timely delivery
+            Experience the Miona Tech Autospares difference - quality products, professional service, and timely delivery
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
