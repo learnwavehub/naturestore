@@ -7,8 +7,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "microplug - Store Auth",
-  description: "microplug Ecommerce store",
+  title: "Miona - Store Auth",
+  description: "Miona Ecommerce store",
 };
 
 export default function RootLayout({

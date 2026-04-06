@@ -7,8 +7,9 @@ export default function BannerSlider() {
   const images = [
     "/mibanner.jpg",
     "/banner1.jpg",
-    "/banner4.jpg",
-    "/banner5.jpg",
+    "/banner44.jpg",
+    "/banner55.jpg",
+     "/banner66.jpg",
   ];
 
   const [index, setIndex] = useState(0);

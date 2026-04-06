@@ -385,7 +385,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-blue-100">Call Us</p>
-                  <p className="font-semibold">0700 141 499</p>
+                  <p className="font-semibold">0715 584 225</p>
                 </div>
               </a>
               
@@ -399,7 +399,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-blue-100">Email</p>
-                  <p className="font-semibold">kaceymwangi@gmail.com</p>
+                  <p className="font-semibold">naomygeorge08@gmail.com</p>
                 </div>
               </a>
             </div>
