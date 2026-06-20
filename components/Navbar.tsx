@@ -87,7 +87,10 @@ const Navbar = () => {
                 ⚡
               </div>
             </div>
-            <span className="hidden md:inline text-white font-bold text-xl">Miona autospares</span>
+            
+            <span className="hidden md:inline text-white font-bold text-xl">Natures Joy <br /> Holistic Health </span>
+            
+             
           </Link>
 
           {/* Contact Info - Desktop */}
@@ -101,12 +104,12 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-xs text-blue-100">Call Us</span>
-                <span className="font-semibold">0715 584 225</span>
+                <span className="font-semibold">0785288416</span>
               </div>
             </a>
             
             <a 
-              href="mailto:naomygeorge08@gmail.com" 
+              href="mailto:naturesjoy.holistichealth@gmail.com" 
               className="flex items-center gap-2 text-white hover:text-blue-100 transition-all duration-300 hover:scale-105 group"
             >
               <div className="p-2 bg-blue-400 rounded-full group-hover:bg-blue-300 transition-colors">

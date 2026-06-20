@@ -5,127 +5,128 @@ import { Star, Quote, ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const testimonials = [
-  {
-    id: 1,
-    name: "Kevin Otieno",
-    title: "Car Owner, Nairobi",
-    content: "Miona Tech Autospares helped me replace my damaged headlights quickly. The quality is excellent and prices are fair. Delivery was faster than expected!",
-    rating: 5.0,
-    date: "2 weeks ago"
-  },
-  {
-    id: 2,
-    name: "Ann Naliaka",
-    title: "Fleet Manager, Mombasa",
-    content: "We sourced side mirrors and LED bulbs for our vehicles and the quality is outstanding. The team is professional and orders are always fulfilled on time.",
-    rating: 5.0,
-    date: "1 month ago"
-  },
-  {
-    id: 3,
-    name: "Victor Ochieng",
-    title: "Mechanic, Kisumu",
-    content: "Miona Tech Autospares is my go-to for headlight lenses and fog lights. Their parts fit perfectly and last long. Great service every time!",
-    rating: 4.8,
-    date: "3 weeks ago"
-  },
-  {
-    id: 4,
-    name: "Beatrice Jepkoech",
-    title: "Car Owner, Nakuru",
-    content: "I replaced my rear bumper and tail light lens through them and the results were amazing. Reliable products and professional service!",
-    rating: 5.0,
-    date: "2 months ago"
-  },
-  {
-    id: 5,
-    name: "George Mutiso",
-    title: "Transport Manager, Thika",
-    content: "Durable spare parts that actually hold up! From projector bulbs to bumpers, everything was delivered on time and within budget.",
-    rating: 4.9,
-    date: "1 week ago"
-  },
-  {
-    id: 6,
-    name: "Faith Cherono",
-    title: "Car Owner, Eldoret",
-    content: "The LED bulbs I bought completely transformed my night driving experience. Great quality and amazing customer support!",
-    rating: 5.0,
-    date: "3 days ago"
-  },
-  {
-    id: 7,
-    name: "Samuel Kiptoo",
-    title: "Taxi Operator, Kisii",
-    content: "Reliable spare parts for daily use. The side mirrors and fog lights I purchased are durable and perfectly compatible.",
-    rating: 4.7,
-    date: "1 month ago"
-  },
-  {
-    id: 8,
-    name: "Joyce Wairimu",
-    title: "Car Dealer, Westlands",
-    content: "We upgraded several vehicles with new headlights and tail light lenses. Quality products that enhance the look and value of the cars.",
-    rating: 5.0,
-    date: "2 weeks ago"
-  },
-  {
-    id: 9,
-    name: "Allan Mboya",
-    title: "Auto Enthusiast, Karen",
-    content: "Premium quality spare parts! The projector bulbs and front bumper I got gave my car a sleek, modern look. Highly recommend.",
-    rating: 4.9,
-    date: "3 months ago"
-  },
-  {
-    id: 10,
-    name: "Mary Wanjiku",
-    title: "Car Owner, Ruiru",
-    content: "Perfect replacement for my damaged side wing and tail light lens. The team was helpful and the products exceeded my expectations.",
-    rating: 5.0,
-    date: "1 month ago"
-  },
-  {
-    id: 11,
-    name: "Dennis Kariuki",
-    title: "Garage Owner, Embakasi",
-    content: "Bulk orders for headlights and LED bulbs are always handled efficiently. My clients are happy with the quality every time.",
-    rating: 4.8,
-    date: "2 weeks ago"
-  },
-  {
-    id: 12,
-    name: "Naomi Atieno",
-    title: "Car Owner, Kilimani",
-    content: "Got my fog lights and headlight lens replaced and the difference is incredible. Professional service and beautiful results!",
-    rating: 5.0,
-    date: "4 days ago"
-  },
-  {
-    id: 13,
-    name: "Peter Karanja",
-    title: "Car Hire Business Owner, Coast",
-    content: "We rely on Miona Tech Autospares for consistent quality across our fleet. Reliable parts and excellent service every time.",
-    rating: 4.9,
-    date: "2 months ago"
-  },
-  {
-    id: 14,
-    name: "Lucy Nduta",
-    title: "Car Owner, Lavington",
-    content: "Stylish and durable spare parts! The rear bumper and LED bulbs I bought upgraded my car's look instantly.",
-    rating: 5.0,
-    date: "1 week ago"
-  },
-  {
-    id: 15,
-    name: "Brian Kiplangat",
-    title: "Logistics Manager, Upper Hill",
-    content: "High-quality spare parts for our fleet vehicles. From side mirrors to front bumpers, everything fits perfectly and lasts long.",
-    rating: 4.8,
-    date: "3 weeks ago"
-  }
+{
+id: 1,
+name: "Grace Wanjiku",
+title: "Health Enthusiast, Nairobi",
+content: "Natures Joy Holistic Health has transformed my digestive health. Their natural herbal products helped me feel lighter, healthier, and more energetic without harsh chemicals.",
+rating: 5.0,
+date: "2 weeks ago"
+},
+{
+id: 2,
+name: "David Otieno",
+title: "Business Owner, Kisumu",
+content: "I have been using their dietary supplements and vitamins for several months. The quality is excellent, and I have noticed a significant improvement in my overall wellness.",
+rating: 5.0,
+date: "1 month ago"
+},
+{
+id: 3,
+name: "Mary Atieno",
+title: "Teacher, Mombasa",
+content: "The digestive support products are amazing. I struggled with stomach discomfort for years, and Natures Joy's natural remedies have made a huge difference.",
+rating: 4.9,
+date: "3 weeks ago"
+},
+{
+id: 4,
+name: "Peter Mwangi",
+title: "Fitness Coach, Nairobi",
+content: "Their weight management products helped me maintain a healthier lifestyle while supporting my fitness goals. Highly recommended for anyone seeking natural solutions.",
+rating: 5.0,
+date: "2 months ago"
+},
+{
+id: 5,
+name: "Lucy Njeri",
+title: "Mother of Three, Nakuru",
+content: "I love their food-grade herbal products. Knowing my family is using safe, natural remedies gives me peace of mind.",
+rating: 4.9,
+date: "1 week ago"
+},
+{
+id: 6,
+name: "Samuel Kiptoo",
+title: "Farmer, Eldoret",
+content: "Excellent customer service and authentic herbal products. The vitamins have boosted my energy levels and overall well-being.",
+rating: 5.0,
+date: "5 days ago"
+},
+{
+id: 7,
+name: "Jane Chebet",
+title: "Healthcare Worker, Kericho",
+content: "The personal care and hygiene products are gentle, effective, and made from natural ingredients. I recommend them to friends and family.",
+rating: 4.8,
+date: "3 weeks ago"
+},
+{
+id: 8,
+name: "Joseph Karanja",
+title: "Entrepreneur, Thika",
+content: "Natures Joy consistently provides high-quality East African herbal products. Their commitment to natural health is truly impressive.",
+rating: 5.0,
+date: "2 weeks ago"
+},
+{
+id: 9,
+name: "Faith Cherono",
+title: "Nutrition Advocate, Eldoret",
+content: "The supplements are well-formulated and effective. I appreciate the focus on natural ingredients and holistic wellness.",
+rating: 4.9,
+date: "1 month ago"
+},
+{
+id: 10,
+name: "Brian Ochieng",
+title: "Software Developer, Nairobi",
+content: "After using their digestive health products, I experienced better gut health and improved daily comfort. Great products and professional guidance.",
+rating: 5.0,
+date: "2 months ago"
+},
+{
+id: 11,
+name: "Ruth Wairimu",
+title: "Retail Manager, Nyeri",
+content: "The herbal wellness range is exceptional. Authentic products, reasonable prices, and excellent customer support.",
+rating: 4.8,
+date: "3 weeks ago"
+},
+{
+id: 12,
+name: "John Mutiso",
+title: "Sales Executive, Machakos",
+content: "I was looking for natural alternatives to support my health journey, and Natures Joy exceeded my expectations.",
+rating: 5.0,
+date: "1 week ago"
+},
+{
+id: 13,
+name: "Esther Naliaka",
+title: "Lecturer, Bungoma",
+content: "Their herbal remedies reflect the rich tradition of East African natural wellness. The quality and effectiveness are outstanding.",
+rating: 4.9,
+date: "2 months ago"
+},
+{
+id: 14,
+name: "Michael Kimani",
+title: "Engineer, Kiambu",
+content: "The weight management and wellness supplements have helped me stay focused on my health goals. Highly satisfied.",
+rating: 5.0,
+date: "6 days ago"
+},
+{
+id: 15,
+name: "Rose Atieno",
+title: "Entrepreneur, Kampala",
+content: "As a customer from East Africa, I appreciate having access to trusted herbal products that support natural health and wellness.",
+rating: 4.9,
+date: "2 weeks ago"
+}
 ];
+
 
 const generateInitials = (name: string) => {
   return name
@@ -241,7 +242,7 @@ export default function Testimonials() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4"
           >
-            Kenyan Businesses <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Love Miona tech autospares</span>
+            Everyone <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Love Natures joy Holistic Health</span>
           </motion.h2>
           
           <motion.p
@@ -581,7 +582,7 @@ export default function Testimonials() {
               
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-bold mb-2">100%</div>
-                <p className="text-blue-100">Recommend Miona Tech</p>
+                <p className="text-blue-100">Recommend Natures Joy Holistic Health</p>
                 <motion.div
                   className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full"
                   whileHover={{ scale: 1.05 }}
@@ -606,7 +607,7 @@ export default function Testimonials() {
             Join Hundreds of Satisfied Kenyan Customers
           </h3>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Experience the Miona Tech Autospares difference - quality products, professional service, and timely delivery
+            Experience Natures Joy Holistic Health difference - quality products, professional service, and timely delivery
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}

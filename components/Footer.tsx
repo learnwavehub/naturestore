@@ -9,8 +9,8 @@ export default function Footer() {
           
           {/* Logo / Brand */}
           <div className="flex-shrink-0">
-            <h2 className="text-2xl font-bold text-white">Miona  Tech Autospares</h2>
-            <p className="mt-1 text-sm">Nairobi - Kirinyaga Road near shell pretrol station</p>
+            <h2 className="text-2xl font-bold text-white">Natures Joy holistic health</h2>
+            <p className="mt-1 text-sm">Nairobi</p>
           </div>
 
           {/* Social links */}
@@ -43,15 +43,15 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white">Contact Us</h3>
             <ul className="mt-2 text-sm space-y-1">
-              <li>📞 <Link href="tel:+254700141499"><span className="hover:text-white">+254 715584225</span></Link> (WhatsApp)</li>
-              <li>✉️ <Link href="mailto:kaceymwangi@gmail.com"><span className="hover:text-white">naomygeorge08@gmail.com</span></Link></li>
+              <li>📞 <Link href="tel:+254700141499"><span className="hover:text-white">0785288416</span></Link> (WhatsApp)</li>
+              <li>✉️ <Link href="mailto:naturesjoy.holistichealth@gmail.com"><span className="hover:text-white">naturesjoy.holistichealth@gmail.com</span></Link></li>
             </ul>
           </div>
 
         </div>
 
         <div className="mt-8 text-center text-xs text-gray-500">
-          &copy; {new Date().getFullYear()} Miona tech autospares Ltd. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Natures Joy Holistic Health Ltd. All Rights Reserved.
         </div>
       </div>
     </footer>
