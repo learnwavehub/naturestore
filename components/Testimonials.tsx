@@ -186,7 +186,15 @@ export default function Testimonials() {
         </div>
 
         {/* Main Testimonial Carousel */}
-        <div className="max-w-6xl mx-auto mb-16">
+    <div
+  className="max-w-7xl mx-auto mb-16 rounded-3xl overflow-hidden p-6 md:p-10"
+  style={{
+    backgroundImage: "url('/newbanner1.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
           <div className="relative h-[500px]">
             <motion.div
               key={currentIndex}
@@ -200,143 +208,162 @@ export default function Testimonials() {
               }}
               className="absolute inset-0"
             >
-              <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100 h-full">
-                <div className="grid md:grid-cols-2 h-full">
-                  {/* Left Side - Testimonial Content */}
-                  <div className="p-8 md:p-12 flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center justify-between mb-6">
-                        <Quote className="w-12 h-12 text-blue-400" />
-                        <div className={`px-3 py-1 rounded-full ${getRatingColor(currentTestimonial.rating)} font-bold`}>
-                          {currentTestimonial.rating.toFixed(1)} Rating
-                        </div>
-                      </div>
-                      
-                      <motion.p
-                        className="text-2xl md:text-3xl text-gray-800 mb-8 leading-relaxed"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.3 }}
-                      >
-                        "{currentTestimonial.content}"
-                      </motion.p>
-                      
-                      <div className="mb-4">
-                        {renderStars(currentTestimonial.rating)}
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <motion.h3
-                        className="text-2xl font-bold text-gray-900 mb-2"
-                        initial={{ x: -20, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ delay: 0.5 }}
-                      >
-                        {currentTestimonial.name}
-                      </motion.h3>
-                      <div className="flex items-center justify-between">
-                        <motion.p
-                          className="text-lg text-blue-600"
-                          initial={{ x: -20, opacity: 0 }}
-                          animate={{ x: 0, opacity: 1 }}
-                          transition={{ delay: 0.6 }}
-                        >
-                          {currentTestimonial.title}
-                        </motion.p>
-                        <motion.p
-                          className="text-sm text-gray-500"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ delay: 0.7 }}
-                        >
-                          {currentTestimonial.date}
-                        </motion.p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Right Side - Client Info & Stats */}
-                  <div className={`bg-gradient-to-br ${getColorFromName(currentTestimonial.name)} p-8 md:p-12 flex flex-col justify-center items-center text-white relative overflow-hidden`}>
-                    {/* Animated background pattern */}
-                    <motion.div
-                      className="absolute inset-0 opacity-10"
-                      animate={{
-                        rotate: 360,
-                      }}
-                      transition={{
-                        duration: 20,
-                        repeat: Infinity,
-                        ease: "linear"
-                      }}
-                    >
-                      <div className="absolute top-1/4 left-1/4 w-32 h-32 border-4 border-white rounded-full"></div>
-                      <div className="absolute bottom-1/4 right-1/4 w-24 h-24 border-4 border-white rounded-full"></div>
-                    </motion.div>
-                    
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ 
-                        type: "spring", 
-                        stiffness: 200,
-                        damping: 20,
-                        delay: 0.4 
-                      }}
-                      className="w-32 h-32 rounded-full bg-white/20 flex items-center justify-center mb-6 relative z-10 border-4 border-white/30"
-                    >
-                      <span className="text-4xl font-bold">
-                        {generateInitials(currentTestimonial.name)}
-                      </span>
-                    </motion.div>
-                    
-                    <motion.div
-                      initial={{ y: 20, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.6 }}
-                      className="text-center relative z-10"
-                    >
-                      <div className="text-5xl font-bold mb-2">
-                        {currentTestimonial.rating.toFixed(1)}
-                      </div>
-                      <div className="text-xl opacity-90 mb-4">
-                        Star Rating
-                      </div>
-                      <div className="flex items-center justify-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <motion.div
-                            key={i}
-                            initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{ delay: 0.7 + i * 0.1 }}
-                          >
-                            <Star className="w-6 h-6 fill-white" />
-                          </motion.div>
-                        ))}
-                      </div>
-                    </motion.div>
-                    
-                    <motion.div
-                      initial={{ y: 20, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.8 }}
-                      className="mt-8 text-center relative z-10"
-                    >
-                      <div className="text-sm opacity-80 mb-2">
-                        Overall Satisfaction
-                      </div>
-                      <div className="w-48 bg-white/30 rounded-full h-2">
-                        <motion.div 
-                          className="bg-white h-2 rounded-full"
-                          initial={{ width: 0 }}
-                          animate={{ width: `${currentTestimonial.rating * 20}%` }}
-                          transition={{ delay: 1, duration: 1 }}
-                        ></motion.div>
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
+             <div className="bg-black/35 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border border-white/20 h-full">
+  <div className="grid md:grid-cols-2 h-full">
+    {/* Left Side - Testimonial Content */}
+    <div className="p-8 md:p-12 flex flex-col justify-between">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <Quote className="w-12 h-12 text-blue-300" />
+
+          <div
+            className={`px-4 py-2 rounded-full ${getRatingColor(
+              currentTestimonial.rating
+            )} font-bold backdrop-blur-sm shadow-lg`}
+          >
+            {currentTestimonial.rating.toFixed(1)} Rating
+          </div>
+        </div>
+
+        <motion.p
+          className="text-2xl md:text-3xl text-white mb-8 leading-relaxed drop-shadow-lg"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          "{currentTestimonial.content}"
+        </motion.p>
+
+        <div className="mb-4">
+          {renderStars(currentTestimonial.rating)}
+        </div>
+      </div>
+
+      <div>
+        <motion.h3
+          className="text-2xl font-bold text-white mb-2 drop-shadow-lg"
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          {currentTestimonial.name}
+        </motion.h3>
+
+        <div className="flex items-center justify-between">
+          <motion.p
+            className="text-lg text-blue-100 font-medium"
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            {currentTestimonial.title}
+          </motion.p>
+
+          <motion.p
+            className="text-sm text-white/80"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+          >
+            {currentTestimonial.date}
+          </motion.p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Side - Client Info & Stats */}
+    <div
+      className={`bg-gradient-to-br ${getColorFromName(
+        currentTestimonial.name
+      )} p-8 md:p-12 flex flex-col justify-center items-center text-white relative overflow-hidden`}
+    >
+      {/* Animated background pattern */}
+      <motion.div
+        className="absolute inset-0 opacity-10"
+        animate={{
+          rotate: 360,
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+      >
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border-4 border-white rounded-full"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-24 h-24 border-4 border-white rounded-full"></div>
+      </motion.div>
+
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 20,
+          delay: 0.4,
+        }}
+        className="w-32 h-32 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6 relative z-10 border-4 border-white/30"
+      >
+        <span className="text-4xl font-bold">
+          {generateInitials(currentTestimonial.name)}
+        </span>
+      </motion.div>
+
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="text-center relative z-10"
+      >
+        <div className="text-5xl font-bold mb-2 drop-shadow-lg">
+          {currentTestimonial.rating.toFixed(1)}
+        </div>
+
+        <div className="text-xl opacity-95 mb-4">
+          Star Rating
+        </div>
+
+        <div className="flex items-center justify-center gap-1">
+          {[...Array(5)].map((_, i) => (
+            <motion.div
+              key={i}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.7 + i * 0.1 }}
+            >
+              <Star className="w-6 h-6 fill-white text-white" />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.8 }}
+        className="mt-8 text-center relative z-10"
+      >
+        <div className="text-sm opacity-90 mb-2">
+          Overall Satisfaction
+        </div>
+
+        <div className="w-48 bg-white/20 backdrop-blur-sm rounded-full h-2">
+          <motion.div
+            className="bg-white h-2 rounded-full"
+            initial={{ width: 0 }}
+            animate={{
+              width: `${currentTestimonial.rating * 20}%`,
+            }}
+            transition={{
+              delay: 1,
+              duration: 1,
+            }}
+          />
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</div>
             </motion.div>
           </div>
           
@@ -394,59 +421,89 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid with Ratings */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ 
-                y: -10, 
-                scale: 1.02,
-                boxShadow: "0 20px 40px rgba(0, 0, 0, 0.1)"
-              }}
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl border border-gray-100 relative overflow-hidden group"
-            >
-              {/* Rating Badge */}
-              <div className={`absolute top-4 right-4 px-3 py-1 rounded-full ${getRatingColor(testimonial.rating)} font-bold text-sm z-10`}>
-                {testimonial.rating.toFixed(1)}
-              </div>
-              
-              <div className="flex items-start gap-4 mb-4">
-                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${getColorFromName(testimonial.name)} flex items-center justify-center text-white font-bold shadow-md`}>
-                  {generateInitials(testimonial.name)}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                    <span className="text-xs text-gray-500">{testimonial.date}</span>
-                  </div>
-                  <p className="text-sm text-blue-600">{testimonial.title}</p>
-                </div>
-              </div>
-              
-              <div className="mb-4">
-                {renderStars(testimonial.rating)}
-              </div>
-              
-              <p className="text-gray-600 mb-2 line-clamp-3">"{testimonial.content}"</p>
-              
-              <div className="pt-4 border-t border-gray-100">
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>Verified Purchase</span>
-                  <motion.div
-                    whileHover={{ scale: 1.2 }}
-                    className="text-blue-500 hover:text-blue-600 cursor-pointer"
-                  >
-                    <Heart className="w-4 h-4" />
-                  </motion.div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+      <div
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 rounded-3xl p-8 md:p-12"
+  style={{
+    backgroundImage: "url('/newbanner2.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  {testimonials.map((testimonial, index) => (
+    <motion.div
+      key={testimonial.id}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      whileHover={{
+        y: -10,
+        scale: 1.02,
+      }}
+      className="bg-black/35 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/20 relative overflow-hidden group"
+    >
+      {/* Rating Badge */}
+      <div
+        className={`absolute top-4 right-4 px-3 py-1 rounded-full ${getRatingColor(
+          testimonial.rating
+        )} font-bold text-sm z-10 backdrop-blur-sm`}
+      >
+        {testimonial.rating.toFixed(1)}
+      </div>
+
+      <div className="flex items-start gap-4 mb-4">
+        <div
+          className={`w-12 h-12 rounded-full bg-gradient-to-br ${getColorFromName(
+            testimonial.name
+          )} flex items-center justify-center text-white font-bold shadow-md`}
+        >
+          {generateInitials(testimonial.name)}
         </div>
+
+        <div className="flex-1">
+          <div className="flex items-center justify-between">
+            <h4 className="font-bold text-white drop-shadow-md">
+              {testimonial.name}
+            </h4>
+
+            <span className="text-xs text-white/70">
+              {testimonial.date}
+            </span>
+          </div>
+
+          <p className="text-sm text-blue-100 font-medium">
+            {testimonial.title}
+          </p>
+        </div>
+      </div>
+
+      <div className="mb-4">
+        {renderStars(testimonial.rating)}
+      </div>
+
+      <p className="text-white/90 mb-4 line-clamp-3 leading-relaxed">
+        "{testimonial.content}"
+      </p>
+
+      <div className="pt-4 border-t border-white/20">
+        <div className="flex items-center justify-between text-sm text-white/70">
+          <span>✓ Verified Purchase</span>
+
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            className="text-pink-300 hover:text-pink-200 cursor-pointer"
+          >
+            <Heart className="w-4 h-4 fill-current" />
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Subtle Glow Effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
+    </motion.div>
+  ))}
+</div>
 
         {/* Overall Rating Stats */}
         <motion.div
@@ -531,6 +588,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="mt-16 text-center"
+     
         >
           <h3 className="text-3xl font-bold text-gray-900 mb-4">
             Join Hundreds of Satisfied Kenyan Customers
@@ -538,14 +596,7 @@ export default function Testimonials() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Experience Natures Joy Holistic Health difference - quality products, professional service, and timely delivery
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            Share Your Experience
-          </motion.button>
+          
         </motion.div>
 
         {/* Floating background elements */}
