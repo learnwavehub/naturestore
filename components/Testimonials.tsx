@@ -53,78 +53,7 @@ content: "Excellent customer service and authentic herbal products. The vitamins
 rating: 5.0,
 date: "5 days ago"
 },
-{
-id: 7,
-name: "Jane Chebet",
-title: "Healthcare Worker, Kericho",
-content: "The personal care and hygiene products are gentle, effective, and made from natural ingredients. I recommend them to friends and family.",
-rating: 4.8,
-date: "3 weeks ago"
-},
-{
-id: 8,
-name: "Joseph Karanja",
-title: "Entrepreneur, Thika",
-content: "Natures Joy consistently provides high-quality East African herbal products. Their commitment to natural health is truly impressive.",
-rating: 5.0,
-date: "2 weeks ago"
-},
-{
-id: 9,
-name: "Faith Cherono",
-title: "Nutrition Advocate, Eldoret",
-content: "The supplements are well-formulated and effective. I appreciate the focus on natural ingredients and holistic wellness.",
-rating: 4.9,
-date: "1 month ago"
-},
-{
-id: 10,
-name: "Brian Ochieng",
-title: "Software Developer, Nairobi",
-content: "After using their digestive health products, I experienced better gut health and improved daily comfort. Great products and professional guidance.",
-rating: 5.0,
-date: "2 months ago"
-},
-{
-id: 11,
-name: "Ruth Wairimu",
-title: "Retail Manager, Nyeri",
-content: "The herbal wellness range is exceptional. Authentic products, reasonable prices, and excellent customer support.",
-rating: 4.8,
-date: "3 weeks ago"
-},
-{
-id: 12,
-name: "John Mutiso",
-title: "Sales Executive, Machakos",
-content: "I was looking for natural alternatives to support my health journey, and Natures Joy exceeded my expectations.",
-rating: 5.0,
-date: "1 week ago"
-},
-{
-id: 13,
-name: "Esther Naliaka",
-title: "Lecturer, Bungoma",
-content: "Their herbal remedies reflect the rich tradition of East African natural wellness. The quality and effectiveness are outstanding.",
-rating: 4.9,
-date: "2 months ago"
-},
-{
-id: 14,
-name: "Michael Kimani",
-title: "Engineer, Kiambu",
-content: "The weight management and wellness supplements have helped me stay focused on my health goals. Highly satisfied.",
-rating: 5.0,
-date: "6 days ago"
-},
-{
-id: 15,
-name: "Rose Atieno",
-title: "Entrepreneur, Kampala",
-content: "As a customer from East Africa, I appreciate having access to trusted herbal products that support natural health and wellness.",
-rating: 4.9,
-date: "2 weeks ago"
-}
+
 ];
 
 

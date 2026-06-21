@@ -5,11 +5,8 @@ import { useState, useEffect } from "react";
 
 export default function BannerSlider() {
   const images = [
-    "/mibanner.jpg",
-    "/banner1.jpg",
-    "/banner44.jpg",
-    "/banner55.jpg",
-     "/banner66.jpg",
+    "/banner1.png",
+    "/banner2.png",
   ];
 
   const [index, setIndex] = useState(0);

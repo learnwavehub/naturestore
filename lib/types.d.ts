@@ -21,6 +21,11 @@ type ProductType = {
   datasheet:string;
   createdAt: string;
   updatedAt: string;
+   // Optional fields for enhanced product card features
+  comparePrice?: number;
+  isNew?: boolean;
+  rating?: number;
+  reviewCount?: number;
 };
 
 type UserType = {
