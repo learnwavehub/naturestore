@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import HeartFavorite from "./HeartFavorite";
 import { MinusCircle, PlusCircle } from "lucide-react";
-
+import Markdown from 'react-markdown'
 import useCart from "@/lib/hooks/useCart";
 
 const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
@@ -39,7 +39,8 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
 
       <div className="flex flex-col gap-2">
         <p className="text-base-medium text-grey-2">Description:</p>
-        <p className="text-small-medium">{productInfo.description}</p>
+        <Markdown>{productInfo.description}</Markdown>
+       
       </div>
 
       {productInfo.colors && productInfo.colors.length > 0 && (
