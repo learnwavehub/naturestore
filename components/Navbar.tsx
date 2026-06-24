@@ -276,7 +276,7 @@ const Navbar = () => {
             </a>
 
             <a 
-              href="mailto:kaceymwangi@gmail.com" 
+              href="mailto:naturesjoy.holistichealth@gmail.com" 
               className="flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-lg text-white hover:bg-blue-700 hover:shadow-md transition-all duration-300"
             >
               <Mail className="h-4 w-4" />
@@ -332,7 +332,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/"
+            href="/allproducts"
             className="flex items-center gap-2 px-6 py-2 rounded-lg text-white hover:bg-blue-700 hover:shadow-md transition-all duration-300"
           >
             <span className="font-medium">All Products</span>
@@ -377,35 +377,32 @@ const Navbar = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="mb-6 space-y-4">
-              <a 
-                href="tel:0700141499" 
-                className="flex items-center gap-3 p-3 bg-white/10 rounded-xl text-white hover:bg-white/20 transition-colors"
-                onClick={() => setDropdownMenu(false)}
-              >
-                <div className="p-2 bg-blue-500 rounded-lg">
-                  <Phone className="h-4 w-4" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm text-blue-100">Call Us</p>
-                  <p className="font-semibold">0715 584 225</p>
-                </div>
-              </a>
-              
-              <a 
-                href="mailto:kaceymwangi@gmail.com" 
-                className="flex items-center gap-3 p-3 bg-white/10 rounded-xl text-white hover:bg-white/20 transition-colors"
-                onClick={() => setDropdownMenu(false)}
-              >
-                <div className="p-2 bg-blue-500 rounded-lg">
-                  <Mail className="h-4 w-4" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm text-blue-100">Email</p>
-                  <p className="font-semibold">naomygeorge08@gmail.com</p>
-                </div>
-              </a>
-            </div>
+            {/* Contact Info */}
+<div className="mb-2">
+  <div className="flex items-center justify-between p-3 bg-white/10 rounded-xl text-white">
+    
+    {/* Phone */}
+    <a
+      href="tel:0785288416"
+      className="flex items-center gap-2 hover:text-blue-200 transition-colors"
+      onClick={() => setDropdownMenu(false)}
+    >
+      <Phone className="h-4 w-4 text-blue-300" />
+      <span className="font-semibold">Call us 0785288416</span>
+    </a>
+
+    {/* Email Icon */}
+    <a
+      href="mailto:naturesjoy.holistichealth@gmail.com"
+      className="p-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors"
+      onClick={() => setDropdownMenu(false)}
+      aria-label="Send Email"
+    >
+      <Mail className="h-4 w-4 text-white" />
+    </a>
+
+  </div>
+</div>
 
             {/* Navigation Links */}
             <div className="flex-1 space-y-2">
@@ -417,7 +414,15 @@ const Navbar = () => {
                 <Home className="h-5 w-5" />
                 <span className="font-medium">Home</span>
               </Link>
-
+              <Link
+                href="/allproducts"
+                className="flex items-center gap-3 p-4 rounded-xl text-white hover:bg-white/10 transition-all"
+                onClick={() => setDropdownMenu(false)}
+              >
+                <Layers className="h-5 w-5" />
+                <span className="font-medium">All products</span>
+                <ChevronDown className="h-4 w-4 ml-auto" />
+              </Link>
               <Link
                 href="/allcollections"
                 className="flex items-center gap-3 p-4 rounded-xl text-white hover:bg-white/10 transition-all"

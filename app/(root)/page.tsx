@@ -12,10 +12,11 @@ const ProductList = dynamicImport(() => import("@/components/ProductList"), {
 
 // Import skeletons
 import CollectionsSkeleton from "@/components/skeletons/CollectionsSkeleton";
-import ProductListSkeleton from "@/components/skeletons/ProductListSkeleton";
+import ProductListSkeleton from "@/components/skeletons/ProductListSkeleton";// Import skeletons
+
 
 export default function Home() {
-  return (
+ return (
     <>
       {/* Push down to avoid navbar overlap */}
       <div className=" w-full"> {/* adjust 64px to your navbar height */}
@@ -24,11 +25,8 @@ export default function Home() {
 
         {/* Content */}
         <Collections />
-        <ProductList />
+        {/*<ProductList />*/}
       </div>
     </>
   );
 }
-
-// Force dynamic rendering
-export const dynamic = "force-dynamic";
