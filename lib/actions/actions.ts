@@ -1,22 +1,45 @@
 // lib/actions.ts
+// lib/actions.ts
+
 export const getCollections = async () => {
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/collections`
-      , {
-      cache: 'no-store' // or next: { revalidate: 60 } for ISR
-   }
-  );
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch collections: ${response.status}`);
+  let delay = 500;
+
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/collections`,
+        {
+          cache: "no-store",
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          `Failed to fetch collections: ${response.status}`
+        );
+      }
+
+      const collections = await response.json();
+
+      if (collections?.length) {
+        return collections;
+      }
+
+      console.warn(
+        `Attempt ${attempt}: Empty collection list. Retrying in ${delay}ms...`
+      );
+    } catch (error) {
+      console.error(`Attempt ${attempt}:`, error);
     }
-    
-    return await response.json();
-  } catch (error) {
-    console.error('Error fetching collections:', error);
-    return [];
+
+    await new Promise((resolve) => setTimeout(resolve, delay));
+
+    // 500ms → 1s → 2s → 4s → 8s
+    delay *= 2;
   }
-}
+
+  return [];
+};
 
 export const getCollectionDetails = async (collectionId: string) => {
   try {
