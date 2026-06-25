@@ -11,6 +11,7 @@ import { ServiceWorkerProvider } from "@/components/pwa/ServiceWorkerProvider";
 import { FloatingBubbles } from "@/components/FloatingBubble";
 import Testimonials from "@/components/Testimonials";
 import { Suspense } from "react";
+import { Klee_One } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Natures Joy Holistic Health",
@@ -57,9 +58,12 @@ export default function RootLayout({
             <main className="min-h-screen pt-16 md:pt-20">
               {children}
             </main>
-            <Suspense fallback={<TestimonialsSkeleton/>}>
+             {/* Add padding-top to prevent content from hiding behind navbar
+             <Suspense fallback={<TestimonialsSkeleton/>}>
             <Testimonials />
             </Suspense>
+             */}
+            
             
             <Footer />
             <InstallPrompt />
@@ -68,4 +72,5 @@ export default function RootLayout({
       </body>
     </html>
   );
+
 }
