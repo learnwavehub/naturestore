@@ -72,3 +72,24 @@ type OrderItemType = {
   size?: string;
   quantity: number;
 }
+export interface TherapyType {
+  _id: string;
+  title: string;
+  description: string;
+  image: string[];
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+// You can also add other utility types
+export interface TherapyFormData {
+  title: string;
+  description: string;
+  image?: string[];
+}
+
+export interface TherapyApiResponse {
+  success: boolean;
+  data?: TherapyType | TherapyType[];
+  error?: string;
+}

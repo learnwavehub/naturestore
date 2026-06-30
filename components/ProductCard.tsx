@@ -6,6 +6,7 @@ import HeartFavorite from "./HeartFavorite";
 import { ShoppingCart, Eye, Zap } from "lucide-react";
 import useCart from "@/lib/hooks/useCart";
 import { useState } from "react";
+import { ProductType, UserType } from "@/lib/types";
 
 interface ProductCardProps {
   product: ProductType;

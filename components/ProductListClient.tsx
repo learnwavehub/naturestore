@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import ProductCard from "./ProductCard";
+import { ProductType } from "@/lib/types";
 
 type ProductListClientProps = {
   products: ProductType[];

@@ -142,3 +142,67 @@ export const getRelatedProducts = async (productId: string) => {
     return [];
   }
 }
+// ==================== THERAPIES ====================
+
+/**
+ * Get all therapies
+ 
+ */
+// ✅ So for therapies, it should be /therapy (not /api/therapy)
+export const getTherapies = async () => {
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/therapy`, {
+      next: { revalidate: 60 }
+    });
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch therapies: ${response.status}`);
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching therapies:', error);
+    return [];
+  }
+}
+
+
+export const getTherapyDetails = async (therapyId: string) => {
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/therapy/${therapyId}`, {
+      cache: 'no-store'
+    });
+    
+    if (!response.ok) {
+      if (response.status === 404) {
+        console.warn(`Therapy ${therapyId} not found`);
+        return null;
+      }
+      throw new Error(`Failed to fetch therapy ${therapyId}: ${response.status}`);
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error(`Error fetching therapy ${therapyId}:`, error);
+    return null;
+  }
+}
+
+export const getSearchedTherapies = async (query: string) => {
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/therapy/search?q=${encodeURIComponent(query)}`, {
+      cache: 'no-store'
+    });
+    
+    if (!response.ok) {
+      throw new Error(`Failed to search therapies: ${response.status}`);
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('Error searching therapies:', error);
+    return [];
+  }
+}
+
+

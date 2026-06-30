@@ -68,7 +68,7 @@ const Navbar = () => {
   return (
     <>
       {/* Fixed navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-[9999] w-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-800 shadow-xl backdrop-blur-sm bg-opacity-95">
+      <nav className="fixed top-0 left-0 right-0 z-[9999] w-full bg-gradient-to-r from-amber-500 via-purple-600 to-orange-800 shadow-xl backdrop-blur-sm bg-opacity-95">
         
         {/* Top Row: Logo, Contact, Search, Cart */}
         <div className="py-3 px-4 sm:px-6 lg:px-8 flex justify-between items-center">

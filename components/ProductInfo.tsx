@@ -5,6 +5,7 @@ import HeartFavorite from "./HeartFavorite";
 import { MinusCircle, PlusCircle } from "lucide-react";
 import Markdown from 'react-markdown'
 import useCart from "@/lib/hooks/useCart";
+import { ProductType } from "@/lib/types";
 
 const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
   const [selectedColor, setSelectedColor] = useState<string>(productInfo.colors[0] || "");
